@@ -1,12 +1,14 @@
 import {fromXml, toXml} from "./src";
 import {ItemFilter} from "./src/item-filter";
 import * as assert from "assert";
+import {ItemFilterIcon} from "./src/item-filter-icon";
+import {ItemFilterIconColor} from "./src/item-filter-icon-color";
 
 const initialXml: string = `<?xml version="1.0" encoding="utf-8"?>
 <ItemFilter xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
   <name>name</name>
-  <filterIcon>1</filterIcon>
-  <filterIconColor>0</filterIconColor>
+  <filterIcon>11</filterIcon>
+  <filterIconColor>10</filterIconColor>
   <description>description</description>
   <lastModifiedInVersion>1.0.1</lastModifiedInVersion>
   <lootFilterVersion>1</lootFilterVersion>
@@ -93,6 +95,9 @@ const initialXml: string = `<?xml version="1.0" encoding="utf-8"?>
 </ItemFilter>`;
 
 const itemFilter: ItemFilter = fromXml(initialXml);
+assert.equal(itemFilter.filterIconEnum, ItemFilterIcon.Boots);
+assert.equal(itemFilter.filterIconColorEnum, ItemFilterIconColor.Green);
+
 const filterToXml = toXml(itemFilter);
 const formattedXml = filterToXml.replace(/<(\w+)([^>]*)\/>/g, '<$1$2 />'); // Add a space to self-closed tags
 assert.deepEqual(formattedXml, initialXml, 'The original XML is not the same as the generated XML');

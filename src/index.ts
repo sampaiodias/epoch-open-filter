@@ -5,6 +5,8 @@ import {Condition} from "./condition";
 import {ClassCondition} from "./class-condition";
 import {RarityCondition} from "./rarity-condition";
 import {SubTypeCondition} from "./sub-type-condition";
+import {ItemFilterIcon} from "./item-filter-icon";
+import {ItemFilterIconColor} from "./item-filter-icon-color";
 
 export type XmlElement = {
     type: string;
@@ -18,7 +20,9 @@ export function fromXml(xml: string): ItemFilter {
     let itemFilter: ItemFilter = {
         description: "",
         filterIcon: 0,
+        filterIconEnum: ItemFilterIcon.None,
         filterIconColor: 0,
+        filterIconColorEnum: ItemFilterIconColor.None,
         lastModifiedInVersion: "",
         lootFilterVersion: 0,
         name: "",
@@ -33,9 +37,13 @@ export function fromXml(xml: string): ItemFilter {
                 break;
             case 'filterIcon':
                 itemFilter.filterIcon = parseInt(element.elements[0].text, 10);
+                const iconKey = Object.keys(ItemFilterIcon).find(key => ItemFilterIcon[key as keyof typeof ItemFilterIcon] === itemFilter.filterIcon);
+                itemFilter.filterIconEnum = iconKey ? ItemFilterIcon[iconKey as keyof typeof ItemFilterIcon] : ItemFilterIcon.None;
                 break;
             case 'filterIconColor':
                 itemFilter.filterIconColor = parseInt(element.elements[0].text, 10);
+                const iconColorKey = Object.keys(ItemFilterIconColor).find(key => ItemFilterIconColor[key as keyof typeof ItemFilterIconColor] === itemFilter.filterIconColor);
+                itemFilter.filterIconColorEnum = iconColorKey ? ItemFilterIconColor[iconColorKey as keyof typeof ItemFilterIconColor] : ItemFilterIconColor.None;
                 break;
             case 'description':
                 itemFilter.description = element.elements[0].text;
