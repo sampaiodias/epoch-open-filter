@@ -1,7 +1,8 @@
-import {fromXml} from "./index";
-import {ItemFilter} from "./item-filter";
+import {fromXml, toXml} from "./src";
+import {ItemFilter} from "./src/item-filter";
+import * as assert from "assert";
 
-const xmlString: string = `
+const initialXml: string = `<?xml version="1.0" encoding="utf-8"?>
 <ItemFilter xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
   <name>Filter Test</name>
   <filterIcon>2</filterIcon>
@@ -56,8 +57,11 @@ const xmlString: string = `
       <nameOverride />
     </Rule>
   </rules>
-</ItemFilter>
-`;
+</ItemFilter>`;
 
-const itemFilter: ItemFilter = fromXml(xmlString);
-console.log(itemFilter);
+const itemFilter: ItemFilter = fromXml(initialXml);
+const filterToXml = toXml(itemFilter);
+const formattedXml = filterToXml.replace(/<(\w+)([^>]*)\/>/g, '<$1$2 />'); // Add a space to self-closed tags
+assert.deepEqual(formattedXml, initialXml, 'The original XML is not the same as the generated XML');
+
+console.log('All tests passed!')

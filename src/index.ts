@@ -1,5 +1,5 @@
 import {ItemFilter} from "./item-filter";
-import {xml2json} from 'xml-js';
+import {js2xml, xml2json} from 'xml-js';
 import {Rule} from "./rule";
 import {Condition} from "./condition";
 import {ClassCondition} from "./class-condition";
@@ -54,8 +54,54 @@ export function fromXml(xml: string): ItemFilter {
     return itemFilter;
 }
 
-export function toXml(lootFilter: ItemFilter): string {
-    return "";
+export function toXml(itemFilter: ItemFilter): string {
+    const itemFilterObj = {
+        _declaration: {
+            _attributes: {
+                version: "1.0",
+                encoding: "utf-8"
+            }
+        },
+        ItemFilter: {
+            _attributes: {
+                'xmlns:i': "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            name: { _text: itemFilter.name },
+            filterIcon: { _text: itemFilter.filterIcon.toString() },
+            filterIconColor: { _text: itemFilter.filterIconColor.toString() },
+            description: { _text: itemFilter.description },
+            lastModifiedInVersion: { _text: itemFilter.lastModifiedInVersion },
+            lootFilterVersion: { _text: itemFilter.lootFilterVersion.toString() },
+            rules: {
+                Rule: itemFilter.rules.map(rule => ({
+                    type: { _text: rule.type },
+                    conditions: {
+                        Condition: rule.conditions.map(condition => {
+                            let conditionObj: any = {
+                                _attributes: { "i:type": condition.type }
+                            };
+                            if (condition.type === 'RarityCondition') {
+                                conditionObj.rarity = { _text: (condition as RarityCondition).rarity };
+                            } else if (condition.type === 'ClassCondition') {
+                                conditionObj.req = { _text: (condition as ClassCondition).req };
+                            }
+                            return conditionObj;
+                        })
+                    },
+                    color: rule.color,
+                    isEnabled: rule.isEnabled,
+                    levelDependent: rule.levelDependent,
+                    minLvl: rule.minLvl,
+                    maxLvl: rule.maxLvl,
+                    emphasized: rule.emphasized,
+                    nameOverride: rule.nameOverride,
+                }))
+            }
+        }
+    };
+
+    const options = { compact: true, ignoreComment: true, spaces: 2 };
+    return js2xml(itemFilterObj, options);
 }
 
 function mapRules(rulesElements: XmlElement[]): Rule[] {
@@ -88,10 +134,10 @@ function mapRules(rulesElements: XmlElement[]): Rule[] {
                    rule.levelDependent = rElement.elements[0].text === 'true';
                    break;
                case 'minLvl':
-                   rule.maxLvl = parseInt(rElement.elements[0].text, 10);
+                   rule.minLvl = parseInt(rElement.elements[0].text, 10);
                    break;
                case 'maxLvl':
-                   rule.minLvl = parseInt(rElement.elements[0].text, 10);
+                   rule.maxLvl = parseInt(rElement.elements[0].text, 10);
                    break;
                case 'emphasized':
                    rule.emphasized = rElement.elements[0].text === 'true';
@@ -109,10 +155,10 @@ function mapRules(rulesElements: XmlElement[]): Rule[] {
     return rules;
 }
 
-function mapConditions(conditionsElements: XmlElement[]): Condition[] {
-    let conditions: Condition[] = [];
+function mapConditions(conditionsElements: XmlElement[]): Condition<any>[] {
+    let conditions: Condition<any>[] = [];
     conditionsElements.forEach((condElement: XmlElement) => {
-        let condition: Condition = {
+        let condition: Condition<any> = {
             type: condElement.attributes["i:type"]
         };
 
