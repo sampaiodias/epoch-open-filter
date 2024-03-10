@@ -4,6 +4,7 @@ import {Rule} from "./rule";
 import {Condition} from "./condition";
 import {ClassCondition} from "./class-condition";
 import {RarityCondition} from "./rarity-condition";
+import {SubTypeCondition} from "./sub-type-condition";
 
 export type XmlElement = {
     type: string;
@@ -84,6 +85,13 @@ export function toXml(itemFilter: ItemFilter): string {
                                 conditionObj.rarity = { _text: (condition as RarityCondition).rarity };
                             } else if (condition.type === 'ClassCondition') {
                                 conditionObj.req = { _text: (condition as ClassCondition).req };
+                            } else if (condition.type === 'SubTypeCondition') {
+                                const c = (condition as SubTypeCondition);
+                                conditionObj.type = c.types.map(t => {
+                                    return {EquipmentType: t}
+                                });
+                                const sList = c.subTypes.map(s => ({ int: s }));
+                                conditionObj.subTypes = { int: sList.map(s => s.int) };
                             }
                             return conditionObj;
                         })
@@ -155,10 +163,10 @@ function mapRules(rulesElements: XmlElement[]): Rule[] {
     return rules;
 }
 
-function mapConditions(conditionsElements: XmlElement[]): Condition<any>[] {
-    let conditions: Condition<any>[] = [];
+function mapConditions(conditionsElements: XmlElement[]): Condition[] {
+    let conditions: Condition[] = [];
     conditionsElements.forEach((condElement: XmlElement) => {
-        let condition: Condition<any> = {
+        let condition: Condition = {
             type: condElement.attributes["i:type"]
         };
 
@@ -168,6 +176,11 @@ function mapConditions(conditionsElements: XmlElement[]): Condition<any>[] {
         } else if (condition.type === "RarityCondition") {
             const rarityCondition: RarityCondition = new RarityCondition(condElement.elements[0].elements[0].text);
             conditions.push(rarityCondition);
+        } else if (condition.type === "SubTypeCondition") {
+            const types: string[] = condElement.elements[0].elements[0].elements.map(e => e.text);
+            const subTypes: number[] = condElement.elements[1].elements.map(e => parseInt(e.elements[0].text));
+            const subTypeCondition: SubTypeCondition = new SubTypeCondition(types, subTypes);
+            conditions.push(subTypeCondition);
         }
     });
     return conditions;

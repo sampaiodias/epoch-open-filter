@@ -1,3 +1,3 @@
-export interface Condition<T> {
-    type: T;
+export interface Condition {
+    type: string;
 }

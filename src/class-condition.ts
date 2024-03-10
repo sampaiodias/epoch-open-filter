@@ -1,7 +1,7 @@
 import {Condition} from "./condition";
 import {CharacterClass} from "./character-class";
 
-export class ClassCondition implements Condition<string> {
+export class ClassCondition implements Condition {
     req: string;
     type: string;
     classList: CharacterClass[];

@@ -1,7 +1,7 @@
 import {Condition} from "./condition";
 import {Rarity} from "./rarity";
 
-export class RarityCondition implements Condition<string> {
+export class RarityCondition implements Condition {
     rarity: string;
     type: string;
     rarityList: Rarity[];

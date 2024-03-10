@@ -1,0 +1,16 @@
+export enum ItemSubType { // TODO add missing elements
+    Hatchet = 0,
+    Pickaxe = 1,
+    RustedCleaver = 2,
+    BattleAxe = 3,
+    Sickle = 4,
+    WengariAxe = 5,
+    CrescentAxe = 6,
+    ConstellationCleaver = 12,
+    ResplendentAxe = 13,
+    ChitinClaw = 7,
+    EagleWing = 8,
+    SoulHarvester = 9,
+    ShadowCleaver = 10,
+    DragonboneAxe = 11,
+}
