@@ -95,6 +95,38 @@ const initialXml: string = `<?xml version="1.0" encoding="utf-8"?>
       <emphasized>false</emphasized>
       <nameOverride />
     </Rule>
+    <Rule>
+      <type>SHOW</type>
+      <conditions>
+        <Condition i:type="LevelCondition">
+          <treshold>7</treshold>
+          <type>BELOW_LEVEL</type>
+        </Condition>
+      </conditions>
+      <color>0</color>
+      <isEnabled>true</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride />
+    </Rule>
+    <Rule>
+      <type>SHOW</type>
+      <conditions>
+        <Condition i:type="LevelCondition">
+          <treshold>0</treshold>
+          <type>HIGHEST_USABLE_LEVEL</type>
+        </Condition>
+      </conditions>
+      <color>0</color>
+      <isEnabled>true</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride />
+    </Rule>
   </rules>
 </ItemFilter>`;
 

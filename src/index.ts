@@ -10,6 +10,7 @@ import {ItemFilterIconColor} from "./item-filter-icon-color";
 import {readFile} from "fs/promises";
 import {ItemTypeData} from "./item-type-data";
 import {Affix} from "./affix";
+import {LevelCondition, LevelConditionType} from "./level-condition";
 
 export type XmlElement = {
     type: string;
@@ -103,6 +104,10 @@ export function toXml(itemFilter: ItemFilter): string {
                                 });
                                 const sList = c.subTypes.map(s => ({ int: s }));
                                 conditionObj.subTypes = { int: sList.map(s => s.int) };
+                            } else if (condition.type === 'LevelCondition') {
+                                const lc = (condition as LevelCondition);
+                                conditionObj.treshold = {_text: lc.threshold}; // Yes, the filter from EHG has a typo
+                                conditionObj.type = {_text: lc.levelConditionType};
                             }
                             return conditionObj;
                         })
@@ -202,6 +207,16 @@ function mapConditions(conditionsElements: XmlElement[]): Condition[] {
             const subTypes: number[] = condElement.elements[1].elements.map(e => parseInt(e.elements[0].text));
             const subTypeCondition: SubTypeCondition = new SubTypeCondition(types, subTypes);
             conditions.push(subTypeCondition);
+        } else if (condition.type === "LevelCondition") {
+            let levelConditionType = condElement.elements.find(x => x.name == 'type')?.elements[0]?.text;
+            if (levelConditionType) {
+                let threshold = condElement.elements.find(x => x.name == 'treshold')?.elements[0]?.text; // Yes, the filter from EHG has a typo
+                if (!threshold) {
+                    threshold = '0';
+                }
+                const levelCondition: LevelCondition = new LevelCondition(parseInt(threshold, 10), levelConditionType);
+                conditions.push(levelCondition);
+            }
         }
     });
     return conditions;
