@@ -1,0 +1,2286 @@
+[
+  {
+    "id": 0,
+    "name": "Helmet",
+    "subTypes": [
+      {
+        "name": "Mercenary Helmet",
+        "id": 0
+      },
+      {
+        "name": "Leather Helmet",
+        "id": 1
+      },
+      {
+        "name": "Iron Helmet",
+        "id": 2
+      },
+      {
+        "name": "Fur Helmet",
+        "id": 3
+      },
+      {
+        "name": "Dome Helmet",
+        "id": 4
+      },
+      {
+        "name": "Bronze Helmet",
+        "id": 5
+      },
+      {
+        "name": "Secutor Helmet",
+        "id": 6
+      },
+      {
+        "name": "Fur Helmet",
+        "id": 7
+      },
+      {
+        "name": "Outcast Cage",
+        "id": 8
+      },
+      {
+        "name": "Bone Mask",
+        "id": 9
+      },
+      {
+        "name": "Skull Cage",
+        "id": 10
+      },
+      {
+        "name": "Death Mask",
+        "id": 11
+      },
+      {
+        "name": "Fiend Cowl",
+        "id": 12
+      },
+      {
+        "name": "Burial Mask",
+        "id": 13
+      },
+      {
+        "name": "Profane Crown",
+        "id": 14
+      },
+      {
+        "name": "Revenant Mask",
+        "id": 15
+      },
+      {
+        "name": "Copper Circlet",
+        "id": 16
+      },
+      {
+        "name": "Adept Helm",
+        "id": 17
+      },
+      {
+        "name": "Keeper Helm",
+        "id": 18
+      },
+      {
+        "name": "Temple Veil",
+        "id": 19
+      },
+      {
+        "name": "Lunar Helm",
+        "id": 20
+      },
+      {
+        "name": "Mystic Helm",
+        "id": 21
+      },
+      {
+        "name": "Celestial Helm",
+        "id": 22
+      },
+      {
+        "name": "Runed Visage",
+        "id": 23
+      },
+      {
+        "name": "Oak Helm",
+        "id": 24
+      },
+      {
+        "name": "Wolf Pelt",
+        "id": 25
+      },
+      {
+        "name": "Forest Cowl",
+        "id": 26
+      },
+      {
+        "name": "Chitin Helm",
+        "id": 27
+      },
+      {
+        "name": "Raptor Helm",
+        "id": 28
+      },
+      {
+        "name": "Icewolf Pelt",
+        "id": 29
+      },
+      {
+        "name": "Darkwolf Pelt",
+        "id": 30
+      },
+      {
+        "name": "Greatwood Visage",
+        "id": 31
+      },
+      {
+        "name": "Leather Helm",
+        "id": 32
+      },
+      {
+        "name": "Infantry Helm",
+        "id": 33
+      },
+      {
+        "name": "Iron Visor",
+        "id": 34
+      },
+      {
+        "name": "Full Helm",
+        "id": 35
+      },
+      {
+        "name": "Winged Helm",
+        "id": 36
+      },
+      {
+        "name": "Myrmidon Helm",
+        "id": 37
+      },
+      {
+        "name": "Augury Helm",
+        "id": 38
+      },
+      {
+        "name": "Solarum Greathelm",
+        "id": 39
+      },
+      {
+        "name": "Tyrant Crown",
+        "id": 40
+      },
+      {
+        "name": "Tusked Greathelm",
+        "id": 41
+      },
+      {
+        "name": "Cloth Hood",
+        "id": 42
+      },
+      {
+        "name": "Leather Mask",
+        "id": 43
+      },
+      {
+        "name": "Bandit Helm",
+        "id": 44
+      },
+      {
+        "name": "Outcast Hat",
+        "id": 45
+      },
+      {
+        "name": "Horned Helm",
+        "id": 46
+      },
+      {
+        "name": "Umbral Hood",
+        "id": 47
+      },
+      {
+        "name": "Exile Hat",
+        "id": 48
+      },
+      {
+        "name": "Pinnacle Helm",
+        "id": 49
+      },
+      {
+        "name": "Falconry Helm",
+        "id": 50
+      },
+      {
+        "name": "Necropolis Helm",
+        "id": 51
+      },
+      {
+        "name": "Terror Crown",
+        "id": 52
+      },
+      {
+        "name": "Avian Helm",
+        "id": 53
+      },
+      {
+        "name": "Kolheim Cowl",
+        "id": 54
+      },
+      {
+        "name": "Meruna Helm",
+        "id": 55
+      },
+      {
+        "name": "Ancestral Crown",
+        "id": 56
+      },
+      {
+        "name": "Weathered Crown",
+        "id": 57
+      },
+      {
+        "name": "Arcane Visage",
+        "id": 58
+      },
+      {
+        "name": "Arena Helm",
+        "id": 59
+      },
+      {
+        "name": "Spiked Helm",
+        "id": 60
+      },
+      {
+        "name": "Leonine Greathelm",
+        "id": 61
+      },
+      {
+        "name": "Witch Hat",
+        "id": 62
+      },
+      {
+        "name": "Coven Hat",
+        "id": 63
+      },
+      {
+        "name": "Immortal Crown",
+        "id": 64
+      },
+      {
+        "name": "Grolehide Hood",
+        "id": 65
+      },
+      {
+        "name": "Scalebane Grimace",
+        "id": 66
+      },
+      {
+        "name": "Blood Visage",
+        "id": 67
+      },
+      {
+        "name": "Dragon Visage",
+        "id": 68
+      },
+      {
+        "name": "Gorgonscale Coif",
+        "id": 69
+      },
+      {
+        "name": "Raven Crown",
+        "id": 70
+      }
+    ],
+    "enum": "HELMET"
+  },
+  {
+    "id": 1,
+    "name": "Body Armour",
+    "subTypes": [
+      {
+        "name": "Mercenary Armor",
+        "id": 0
+      },
+      {
+        "name": "Leather Coat",
+        "id": 1
+      },
+      {
+        "name": "Iron Armor",
+        "id": 2
+      },
+      {
+        "name": "Red Leather Armor",
+        "id": 3
+      },
+      {
+        "name": "Banded Armor",
+        "id": 4
+      },
+      {
+        "name": "Copper Armor",
+        "id": 5
+      },
+      {
+        "name": "Secutor Armor",
+        "id": 6
+      },
+      {
+        "name": "Fur Armour",
+        "id": 7
+      },
+      {
+        "name": "Outcast Rags",
+        "id": 8
+      },
+      {
+        "name": "Heretic Garb",
+        "id": 9
+      },
+      {
+        "name": "Initiate Robes",
+        "id": 10
+      },
+      {
+        "name": "Ribbed Cuirass",
+        "id": 11
+      },
+      {
+        "name": "Fiend Robes",
+        "id": 12
+      },
+      {
+        "name": "Burial Plate",
+        "id": 13
+      },
+      {
+        "name": "Profane Regalia",
+        "id": 14
+      },
+      {
+        "name": "Revenant Plate",
+        "id": 15
+      },
+      {
+        "name": "Traveling Coat",
+        "id": 16
+      },
+      {
+        "name": "Adept Robes",
+        "id": 17
+      },
+      {
+        "name": "Archive Robes",
+        "id": 18
+      },
+      {
+        "name": "Temple Garb",
+        "id": 19
+      },
+      {
+        "name": "Opulent Robes",
+        "id": 20
+      },
+      {
+        "name": "Mystic Plate",
+        "id": 21
+      },
+      {
+        "name": "Celestial Raiment",
+        "id": 22
+      },
+      {
+        "name": "Vulkaur Regalia",
+        "id": 23
+      },
+      {
+        "name": "Hide Armor",
+        "id": 24
+      },
+      {
+        "name": "Oak Armor",
+        "id": 25
+      },
+      {
+        "name": "Forest Garb",
+        "id": 26
+      },
+      {
+        "name": "Icewolf Garb",
+        "id": 27
+      },
+      {
+        "name": "Shamanic Garb",
+        "id": 28
+      },
+      {
+        "name": "Kolheim Armor",
+        "id": 29
+      },
+      {
+        "name": "Meruna Carapace",
+        "id": 30
+      },
+      {
+        "name": "Greatwood Coat",
+        "id": 31
+      },
+      {
+        "name": "Ringmail Hauberk",
+        "id": 32
+      },
+      {
+        "name": "Infantry Hauberk",
+        "id": 33
+      },
+      {
+        "name": "Iron Cuirass",
+        "id": 34
+      },
+      {
+        "name": "Full Plate",
+        "id": 35
+      },
+      {
+        "name": "Noble Plate",
+        "id": 36
+      },
+      {
+        "name": "Myrmidon Plate",
+        "id": 37
+      },
+      {
+        "name": "Augury Plate",
+        "id": 38
+      },
+      {
+        "name": "Solarum Plate",
+        "id": 39
+      },
+      {
+        "name": "Apocalypse Plate",
+        "id": 40
+      },
+      {
+        "name": "Tyrant Regalia",
+        "id": 41
+      },
+      {
+        "name": "Ancestral Garb",
+        "id": 42
+      },
+      {
+        "name": "Cloth Armor",
+        "id": 43
+      },
+      {
+        "name": "Leather Hauberk",
+        "id": 44
+      },
+      {
+        "name": "Bandit Garb",
+        "id": 45
+      },
+      {
+        "name": "Outcast Coat",
+        "id": 46
+      },
+      {
+        "name": "Brigandine Armor",
+        "id": 47
+      },
+      {
+        "name": "Umbral Coat",
+        "id": 48
+      },
+      {
+        "name": "Exile Coat",
+        "id": 49
+      },
+      {
+        "name": "Elite Regalia",
+        "id": 50
+      },
+      {
+        "name": "Falconry Armor",
+        "id": 51
+      },
+      {
+        "name": "Necropolis Plate",
+        "id": 52
+      },
+      {
+        "name": "Avian Garb",
+        "id": 53
+      },
+      {
+        "name": "Chitin Carapace",
+        "id": 54
+      },
+      {
+        "name": "Beastmail",
+        "id": 55
+      },
+      {
+        "name": "Keeper Raiment",
+        "id": 56
+      },
+      {
+        "name": "Lunar Raiment",
+        "id": 57
+      },
+      {
+        "name": "Arcane Regalia",
+        "id": 58
+      },
+      {
+        "name": "Worn Plate",
+        "id": 59
+      },
+      {
+        "name": "Forge Plate",
+        "id": 60
+      },
+      {
+        "name": "Champion Regalia",
+        "id": 61
+      },
+      {
+        "name": "Witch Robes",
+        "id": 62
+      },
+      {
+        "name": "Coven Robes",
+        "id": 63
+      },
+      {
+        "name": "Immortal Regalia",
+        "id": 64
+      },
+      {
+        "name": "Grolehide Coat",
+        "id": 65
+      },
+      {
+        "name": "Scalebane Coat",
+        "id": 66
+      },
+      {
+        "name": "Wyrmhide Coat",
+        "id": 67
+      },
+      {
+        "name": "Dragonhide Coat",
+        "id": 68
+      },
+      {
+        "name": "Gorgonscale Coat",
+        "id": 69
+      },
+      {
+        "name": "Sanguine Regalia",
+        "id": 70
+      }
+    ],
+    "enum": "BODY_ARMOR"
+  },
+  {
+    "id": 2,
+    "name": "Belt",
+    "subTypes": [
+      {
+        "name": "Sash",
+        "id": 0
+      },
+      {
+        "name": "Leather Belt",
+        "id": 1
+      },
+      {
+        "name": "Plated Belt",
+        "id": 2
+      },
+      {
+        "name": "Traveller Belt",
+        "id": 3
+      },
+      {
+        "name": "Chain Belt",
+        "id": 4
+      },
+      {
+        "name": "Nomad Belt",
+        "id": 5
+      },
+      {
+        "name": "Noble Sash",
+        "id": 6
+      },
+      {
+        "name": "Spidersilk Sash",
+        "id": 7
+      },
+      {
+        "name": "Praetorian Belt",
+        "id": 8
+      },
+      {
+        "name": "Osprean Belt",
+        "id": 9
+      },
+      {
+        "name": "Divine Girdle",
+        "id": 10
+      },
+      {
+        "name": "Circle of Fortune Belt",
+        "id": 11
+      },
+      {
+        "name": "Merchants Guild Belt",
+        "id": 12
+      }
+    ],
+    "enum": "BELT"
+  },
+  {
+    "id": 3,
+    "name": "Boots",
+    "subTypes": [
+      {
+        "name": "Hide Boots",
+        "id": 0
+      },
+      {
+        "name": "Leather Boots",
+        "id": 1
+      },
+      {
+        "name": "Iron Boots",
+        "id": 2
+      },
+      {
+        "name": "Outcast Boots",
+        "id": 3
+      },
+      {
+        "name": "Brigandine Boots",
+        "id": 4
+      },
+      {
+        "name": "Heoborean Boots",
+        "id": 5
+      },
+      {
+        "name": "Solarum Greaves",
+        "id": 6
+      },
+      {
+        "name": "Worn Boots",
+        "id": 7
+      },
+      {
+        "name": "Shrine Boots",
+        "id": 8
+      },
+      {
+        "name": "Arcane Boots",
+        "id": 9
+      },
+      {
+        "name": "Vanguard Boots",
+        "id": 10
+      },
+      {
+        "name": "Citadel Boots",
+        "id": 11
+      },
+      {
+        "name": "Circle of Fortune Boots",
+        "id": 12
+      },
+      {
+        "name": "Merchants Guild Boots",
+        "id": 13
+      },
+      {
+        "name": "Veterans Boots",
+        "id": 14
+      }
+    ],
+    "enum": "BOOTS"
+  },
+  {
+    "id": 4,
+    "name": "Gloves",
+    "subTypes": [
+      {
+        "name": "Hide Gloves",
+        "id": 0
+      },
+      {
+        "name": "Leather Gloves",
+        "id": 1
+      },
+      {
+        "name": "Mail Bracers",
+        "id": 2
+      },
+      {
+        "name": "Outcast Gloves",
+        "id": 3
+      },
+      {
+        "name": "Noble Gloves",
+        "id": 4
+      },
+      {
+        "name": "Plated Gauntlets",
+        "id": 5
+      },
+      {
+        "name": "Solarum Bracers",
+        "id": 6
+      },
+      {
+        "name": "Crusader Gauntlets",
+        "id": 7
+      },
+      {
+        "name": "Gluttonous Gloves",
+        "id": 8
+      },
+      {
+        "name": "Serrated Bracers",
+        "id": 9
+      },
+      {
+        "name": "Arcane Bracers",
+        "id": 10
+      },
+      {
+        "name": "Ascetic Gloves",
+        "id": 11
+      },
+      {
+        "name": "Eternal Gauntlets",
+        "id": 12
+      },
+      {
+        "name": "Circle of Fortune Gloves",
+        "id": 13
+      },
+      {
+        "name": "Merchants Guild Gloves",
+        "id": 14
+      }
+    ],
+    "enum": "GLOVES"
+  },
+  {
+    "id": 5,
+    "name": "One-Handed Axe",
+    "subTypes": [
+      {
+        "name": "Hatchet",
+        "id": 0
+      },
+      {
+        "name": "Pickaxe",
+        "id": 1
+      },
+      {
+        "name": "Rusted Cleaver",
+        "id": 2
+      },
+      {
+        "name": "Battle Axe",
+        "id": 3
+      },
+      {
+        "name": "Sickle",
+        "id": 4
+      },
+      {
+        "name": "Wengari Axe",
+        "id": 5
+      },
+      {
+        "name": "Crescent Axe",
+        "id": 6
+      },
+      {
+        "name": "Chitin Claw",
+        "id": 7
+      },
+      {
+        "name": "Eagle Wing",
+        "id": 8
+      },
+      {
+        "name": "Soul Harvester",
+        "id": 9
+      },
+      {
+        "name": "Shadow Cleaver",
+        "id": 10
+      },
+      {
+        "name": "Dragonbone Axe",
+        "id": 11
+      },
+      {
+        "name": "Circle of Fortune 1H Axe",
+        "id": 12
+      },
+      {
+        "name": "Merchants Guild 1H Axe",
+        "id": 13
+      }
+    ],
+    "enum": "ONE_HANDED_AXE"
+  },
+  {
+    "id": 6,
+    "name": "Dagger",
+    "subTypes": [
+      {
+        "name": "Poignard",
+        "id": 0
+      },
+      {
+        "name": "Sacrificial Knife",
+        "id": 1
+      },
+      {
+        "name": "Bone Dagger",
+        "id": 2
+      },
+      {
+        "name": "Kris",
+        "id": 3
+      },
+      {
+        "name": "Hunting Knife",
+        "id": 4
+      },
+      {
+        "name": "Moon Dagger",
+        "id": 5
+      },
+      {
+        "name": "Majasan Dagger",
+        "id": 6
+      },
+      {
+        "name": "Rune Dagger",
+        "id": 7
+      },
+      {
+        "name": "Sai",
+        "id": 8
+      },
+      {
+        "name": "Chitin Dagger",
+        "id": 9
+      },
+      {
+        "name": "Obsidian Dagger",
+        "id": 10
+      },
+      {
+        "name": "Circle of Fortune Dagger",
+        "id": 11
+      },
+      {
+        "name": "Merchants Guild Dagger",
+        "id": 12
+      }
+    ],
+    "enum": "ONE_HANDED_DAGGER"
+  },
+  {
+    "id": 7,
+    "name": "One-Handed Mace",
+    "subTypes": [
+      {
+        "name": "Club",
+        "id": 0
+      },
+      {
+        "name": "Iron Hammer",
+        "id": 1
+      },
+      {
+        "name": "Flanged Mace",
+        "id": 2
+      },
+      {
+        "name": "Morning Star",
+        "id": 3
+      },
+      {
+        "name": "Pick Hammer",
+        "id": 4
+      },
+      {
+        "name": "Ebertusk Club",
+        "id": 5
+      },
+      {
+        "name": "Urchin Star",
+        "id": 6
+      },
+      {
+        "name": "Serpent Mace",
+        "id": 7
+      },
+      {
+        "name": "Solarum Hammer",
+        "id": 8
+      },
+      {
+        "name": "Doom Star",
+        "id": 9
+      },
+      {
+        "name": "Rune Hammer",
+        "id": 10
+      },
+      {
+        "name": "Merchants Guild 1H Mace",
+        "id": 11
+      },
+      {
+        "name": "Circle of Fortune 1H Mace",
+        "id": 12
+      }
+    ],
+    "enum": "ONE_HANDED_MACES"
+  },
+  {
+    "id": 8,
+    "name": "Sceptre",
+    "subTypes": [
+      {
+        "name": "Brass Sceptre",
+        "id": 0
+      },
+      {
+        "name": "Ice Sceptre",
+        "id": 1
+      },
+      {
+        "name": "Ornate Sceptre",
+        "id": 2
+      },
+      {
+        "name": "Cultist Sceptre",
+        "id": 3
+      },
+      {
+        "name": "Oak Sceptre",
+        "id": 4
+      },
+      {
+        "name": "Auric Sceptre",
+        "id": 5
+      },
+      {
+        "name": "Argent Sceptre",
+        "id": 6
+      },
+      {
+        "name": "Acolyte Sceptre",
+        "id": 7
+      },
+      {
+        "name": "Obsidian Sceptre",
+        "id": 8
+      },
+      {
+        "name": "Skeletal Sceptre",
+        "id": 9
+      },
+      {
+        "name": "Circle of Fortune Sceptre",
+        "id": 10
+      },
+      {
+        "name": "Merchants Guild Sceptre",
+        "id": 11
+      }
+    ],
+    "enum": "ONE_HANDED_SCEPTRE"
+  },
+  {
+    "id": 9,
+    "name": "One-Handed Sword",
+    "subTypes": [
+      {
+        "name": "Broken Sword",
+        "id": 0
+      },
+      {
+        "name": "Broadsword",
+        "id": 1
+      },
+      {
+        "name": "Rust Blade",
+        "id": 2
+      },
+      {
+        "name": "Gladius",
+        "id": 3
+      },
+      {
+        "name": "Cultist Blade",
+        "id": 4
+      },
+      {
+        "name": "Falchion",
+        "id": 5
+      },
+      {
+        "name": "Longsword",
+        "id": 6
+      },
+      {
+        "name": "Nagasa Scymitar",
+        "id": 7
+      },
+      {
+        "name": "Crystal Sword",
+        "id": 8
+      },
+      {
+        "name": "Katana",
+        "id": 9
+      },
+      {
+        "name": "Dawn Blade",
+        "id": 10
+      },
+      {
+        "name": "Circle of Fortune 1H Sword",
+        "id": 11
+      },
+      {
+        "name": "Merchants Guild 1H Sword",
+        "id": 12
+      }
+    ],
+    "enum": "ONE_HANDED_SWORD"
+  },
+  {
+    "id": 10,
+    "name": "Wand",
+    "subTypes": [
+      {
+        "name": "Coral Wand",
+        "id": 0
+      },
+      {
+        "name": "Rowan Wand",
+        "id": 1
+      },
+      {
+        "name": "Archivist Wand",
+        "id": 2
+      },
+      {
+        "name": "Ornate Wand",
+        "id": 3
+      },
+      {
+        "name": "Spriggan Branch",
+        "id": 4
+      },
+      {
+        "name": "Ritual Stake",
+        "id": 5
+      },
+      {
+        "name": "Ivory Wand",
+        "id": 6
+      },
+      {
+        "name": "Birch Wand",
+        "id": 7
+      },
+      {
+        "name": "Profane Wand",
+        "id": 8
+      },
+      {
+        "name": "Crystal Wand",
+        "id": 9
+      },
+      {
+        "name": "Dragonhorn Wand",
+        "id": 10
+      },
+      {
+        "name": "Merchants Guild Wand",
+        "id": 11
+      },
+      {
+        "name": "Circle of Fortune Wand",
+        "id": 12
+      }
+    ],
+    "enum": "WAND"
+  },
+  {
+    "id": 12,
+    "name": "Two-Handed Axe",
+    "subTypes": [
+      {
+        "name": "Forestry Axe",
+        "id": 0
+      },
+      {
+        "name": "Refuge Axe",
+        "id": 1
+      },
+      {
+        "name": "Cultist Chopper",
+        "id": 2
+      },
+      {
+        "name": "Bearded Axe",
+        "id": 3
+      },
+      {
+        "name": "Imperial Halberd",
+        "id": 4
+      },
+      {
+        "name": "Ice Axe",
+        "id": 5
+      },
+      {
+        "name": "Great Axe",
+        "id": 6
+      },
+      {
+        "name": "Jade Cleaver",
+        "id": 7
+      },
+      {
+        "name": "Obsidian Axe",
+        "id": 8
+      },
+      {
+        "name": "Bone Scythe",
+        "id": 9
+      },
+      {
+        "name": "Bardiche",
+        "id": 10
+      },
+      {
+        "name": "Radiant Axe",
+        "id": 11
+      },
+      {
+        "name": "Silver Crescent",
+        "id": 12
+      },
+      {
+        "name": "Fire Lich Scythe",
+        "id": 13
+      },
+      {
+        "name": "Circle of Fortune 2H Axe",
+        "id": 14
+      },
+      {
+        "name": "Merchants Guild 2H Axe",
+        "id": 15
+      }
+    ],
+    "enum": "TWO_HANDED_AXE"
+  },
+  {
+    "id": 13,
+    "name": "Two-Handed Mace",
+    "subTypes": [
+      {
+        "name": "Great Mace",
+        "id": 0
+      },
+      {
+        "name": "Spiked Great Club",
+        "id": 1
+      },
+      {
+        "name": "Maul",
+        "id": 2
+      },
+      {
+        "name": "Spiked Maul",
+        "id": 3
+      },
+      {
+        "name": "Giant Club",
+        "id": 4
+      },
+      {
+        "name": "Great Hammer",
+        "id": 5
+      },
+      {
+        "name": "Titan Femur",
+        "id": 6
+      },
+      {
+        "name": "Terror Mace",
+        "id": 7
+      },
+      {
+        "name": "Lucerne",
+        "id": 8
+      },
+      {
+        "name": "Eber Head",
+        "id": 9
+      },
+      {
+        "name": "Circle of Fortune 2H Mace",
+        "id": 10
+      },
+      {
+        "name": "Merchants Guild 2H Mace",
+        "id": 11
+      }
+    ],
+    "enum": "TWO_HANDED_MACE"
+  },
+  {
+    "id": 14,
+    "name": "Two-Handed Spear",
+    "subTypes": [
+      {
+        "name": "Pike",
+        "id": 0
+      },
+      {
+        "name": "Short Spear",
+        "id": 1
+      },
+      {
+        "name": "Ice Spear",
+        "id": 2
+      },
+      {
+        "name": "Impaler",
+        "id": 3
+      },
+      {
+        "name": "Trident",
+        "id": 4
+      },
+      {
+        "name": "Glaive",
+        "id": 5
+      },
+      {
+        "name": "Polesword",
+        "id": 6
+      },
+      {
+        "name": "Dragonslayer Glaive",
+        "id": 7
+      },
+      {
+        "name": "Deicide Lance",
+        "id": 8
+      },
+      {
+        "name": "Sun Spear",
+        "id": 9
+      },
+      {
+        "name": "Dredge Hook",
+        "id": 10
+      },
+      {
+        "name": "Coiled Bident",
+        "id": 11
+      },
+      {
+        "name": "Obsidian Lance",
+        "id": 12
+      },
+      {
+        "name": "Jadebone Javelin",
+        "id": 13
+      },
+      {
+        "name": "Rat City Impaler",
+        "id": 14
+      },
+      {
+        "name": "Circle of Fortune Spear",
+        "id": 15
+      },
+      {
+        "name": "Merchants Guild Spear",
+        "id": 16
+      }
+    ],
+    "enum": "TWO_HANDED_SPEAR"
+  },
+  {
+    "id": 15,
+    "name": "Two-Handed Staff",
+    "subTypes": [
+      {
+        "name": "Travelling Staff",
+        "id": 0
+      },
+      {
+        "name": "Root Staff",
+        "id": 1
+      },
+      {
+        "name": "Sacrificial Staff",
+        "id": 2
+      },
+      {
+        "name": "Quarter Staff",
+        "id": 3
+      },
+      {
+        "name": "Imperial Staff",
+        "id": 4
+      },
+      {
+        "name": "Spine Rod",
+        "id": 5
+      },
+      {
+        "name": "Shamanic Staff",
+        "id": 6
+      },
+      {
+        "name": "Moon Staff",
+        "id": 7
+      },
+      {
+        "name": "Crystal Staff",
+        "id": 8
+      },
+      {
+        "name": "Horned Staff",
+        "id": 9
+      },
+      {
+        "name": "Temple Staff",
+        "id": 10
+      },
+      {
+        "name": "Bladed Staff",
+        "id": 11
+      },
+      {
+        "name": "Gate Staff",
+        "id": 12
+      },
+      {
+        "name": "Dragon Staff",
+        "id": 13
+      },
+      {
+        "name": "Gate Staff",
+        "id": 14
+      },
+      {
+        "name": "Circle of Fortune Staff",
+        "id": 15
+      },
+      {
+        "name": "Merchants Guild Staff",
+        "id": 16
+      }
+    ],
+    "enum": "TWO_HANDED_STAFF"
+  },
+  {
+    "id": 16,
+    "name": "Two-Handed Sword",
+    "subTypes": [
+      {
+        "name": "Bastard Sword",
+        "id": 0
+      },
+      {
+        "name": "Split Greatsword",
+        "id": 1
+      },
+      {
+        "name": "Imperial Warblade",
+        "id": 2
+      },
+      {
+        "name": "Khopesh",
+        "id": 3
+      },
+      {
+        "name": "Claymore",
+        "id": 4
+      },
+      {
+        "name": "Odachi",
+        "id": 5
+      },
+      {
+        "name": "Winged Blade",
+        "id": 6
+      },
+      {
+        "name": "Flamberge",
+        "id": 7
+      },
+      {
+        "name": "Hollow Blade",
+        "id": 8
+      },
+      {
+        "name": "Zweihander",
+        "id": 9
+      },
+      {
+        "name": "Solarum Greatsword",
+        "id": 10
+      },
+      {
+        "name": "Circle of Fortune 2H Sword",
+        "id": 11
+      },
+      {
+        "name": "Merchants Guild 2H Sword",
+        "id": 12
+      }
+    ],
+    "enum": "TWO_HANDED_SWORD"
+  },
+  {
+    "id": 17,
+    "name": "Quiver",
+    "subTypes": [
+      {
+        "name": "Light Quiver",
+        "id": 0
+      },
+      {
+        "name": "Heavy Quiver",
+        "id": 1
+      },
+      {
+        "name": "Ivory Quiver",
+        "id": 2
+      },
+      {
+        "name": "Nomad Quiver",
+        "id": 3
+      },
+      {
+        "name": "Farwood Quiver",
+        "id": 4
+      },
+      {
+        "name": "Skalnir Quiver",
+        "id": 5
+      },
+      {
+        "name": "Nagasa Quiver",
+        "id": 6
+      },
+      {
+        "name": "Spidersilk Quiver",
+        "id": 7
+      }
+    ],
+    "enum": "QUIVER"
+  },
+  {
+    "id": 18,
+    "name": "Shield",
+    "subTypes": [
+      {
+        "name": "Wooden Shield",
+        "id": 0
+      },
+      {
+        "name": "Targe",
+        "id": 1
+      },
+      {
+        "name": "Heater Shield",
+        "id": 2
+      },
+      {
+        "name": "Knight Shield",
+        "id": 3
+      },
+      {
+        "name": "Cavalier Shield",
+        "id": 4
+      },
+      {
+        "name": "Tower Shield",
+        "id": 5
+      },
+      {
+        "name": "Bandit Shield",
+        "id": 6
+      },
+      {
+        "name": "Root Shield",
+        "id": 7
+      },
+      {
+        "name": "Frostbound Shield",
+        "id": 8
+      },
+      {
+        "name": "Kite Shield",
+        "id": 9
+      },
+      {
+        "name": "Meruna Shell",
+        "id": 10
+      },
+      {
+        "name": "Mountain Shield",
+        "id": 11
+      },
+      {
+        "name": "Carapace Shield",
+        "id": 12
+      },
+      {
+        "name": "Ironglass Shield",
+        "id": 13
+      },
+      {
+        "name": "Dawn Shield",
+        "id": 14
+      },
+      {
+        "name": "Rotskin Round Shield",
+        "id": 15
+      },
+      {
+        "name": "Stone Shield",
+        "id": 16
+      },
+      {
+        "name": "Old Kite Shield",
+        "id": 17
+      },
+      {
+        "name": "Merchants Guild Shield",
+        "id": 18
+      },
+      {
+        "name": "Circle of Fortune Shield",
+        "id": 19
+      }
+    ],
+    "enum": "SHIELD"
+  },
+  {
+    "id": 19,
+    "name": "Off-Hand Catalyst",
+    "subTypes": [
+      {
+        "name": "Glass Catalyst",
+        "id": 0
+      },
+      {
+        "name": "Leatherbound Tome",
+        "id": 1
+      },
+      {
+        "name": "Ritual Stone",
+        "id": 2
+      },
+      {
+        "name": "Branded Skull",
+        "id": 3
+      },
+      {
+        "name": "Sapphire Tome",
+        "id": 4
+      },
+      {
+        "name": "Osprix Skull",
+        "id": 5
+      },
+      {
+        "name": "Rune Stone",
+        "id": 6
+      },
+      {
+        "name": "Astrolabe",
+        "id": 7
+      },
+      {
+        "name": "Opulent Focus",
+        "id": 8
+      },
+      {
+        "name": "Dragon Eye",
+        "id": 9
+      },
+      {
+        "name": "Fleshbound Tome",
+        "id": 10
+      },
+      {
+        "name": "Crystal Skull",
+        "id": 11
+      },
+      {
+        "name": "Chronolabe",
+        "id": 12
+      },
+      {
+        "name": "Divine Instrument",
+        "id": 13
+      },
+      {
+        "name": "Avian Puppet",
+        "id": 14
+      },
+      {
+        "name": "Soulmass",
+        "id": 15
+      },
+      {
+        "name": "Merchants Guild Catalyst",
+        "id": 16
+      },
+      {
+        "name": "Circle of Fortune Catalyst",
+        "id": 17
+      }
+    ],
+    "enum": "CATALYST"
+  },
+  {
+    "id": 20,
+    "name": "Amulet",
+    "subTypes": [
+      {
+        "name": "Copper Amulet",
+        "id": 0
+      },
+      {
+        "name": "Jade Amulet",
+        "id": 1
+      },
+      {
+        "name": "Silver Amulet",
+        "id": 2
+      },
+      {
+        "name": "Brass Amulet",
+        "id": 3
+      },
+      {
+        "name": "Turquoise Amulet",
+        "id": 4
+      },
+      {
+        "name": "Ruby Amulet",
+        "id": 5
+      },
+      {
+        "name": "Sapphire Amulet",
+        "id": 6
+      },
+      {
+        "name": "Bone Amulet",
+        "id": 7
+      },
+      {
+        "name": "Oracle Amulet",
+        "id": 8
+      },
+      {
+        "name": "Gold Amulet",
+        "id": 9
+      },
+      {
+        "name": "Circle of Fortune Amulet",
+        "id": 10
+      },
+      {
+        "name": "Merchants Guild Amulet",
+        "id": 11
+      }
+    ],
+    "enum": "AMULET"
+  },
+  {
+    "id": 21,
+    "name": "Ring",
+    "subTypes": [
+      {
+        "name": "Copper Ring",
+        "id": 0
+      },
+      {
+        "name": "Ruby Ring",
+        "id": 1
+      },
+      {
+        "name": "Sapphire Ring",
+        "id": 2
+      },
+      {
+        "name": "Silver Ring",
+        "id": 3
+      },
+      {
+        "name": "Gold Ring",
+        "id": 4
+      },
+      {
+        "name": "Captain Ring",
+        "id": 5
+      },
+      {
+        "name": "Jade Ring",
+        "id": 6
+      },
+      {
+        "name": "Turquoise Ring",
+        "id": 7
+      },
+      {
+        "name": "Ivory Ring",
+        "id": 8
+      },
+      {
+        "name": "Coral Ring",
+        "id": 9
+      },
+      {
+        "name": "Opal Ring",
+        "id": 10
+      },
+      {
+        "name": "Circle of Fortune Ring",
+        "id": 11
+      },
+      {
+        "name": "Merchants Guild Ring",
+        "id": 12
+      }
+    ],
+    "enum": "RING"
+  },
+  {
+    "id": 22,
+    "name": "Relic",
+    "subTypes": [
+      {
+        "name": "Mage Relic",
+        "id": 0
+      },
+      {
+        "name": "Beast Master Relic",
+        "id": 1
+      },
+      {
+        "name": "Reliquary Grimoire",
+        "id": 2
+      },
+      {
+        "name": "Copper Chalice",
+        "id": 3
+      },
+      {
+        "name": "Silver Grail",
+        "id": 4
+      },
+      {
+        "name": "Golden Chalice",
+        "id": 5
+      },
+      {
+        "name": "Grave Lantern",
+        "id": 6
+      },
+      {
+        "name": "Overgrowth Bloom",
+        "id": 7
+      },
+      {
+        "name": "Navigation Orb",
+        "id": 8
+      },
+      {
+        "name": "Broken Hilt",
+        "id": 9
+      },
+      {
+        "name": "Splintered Haft",
+        "id": 10
+      },
+      {
+        "name": "Defiled Bones",
+        "id": 11
+      },
+      {
+        "name": "Caged Souls",
+        "id": 12
+      },
+      {
+        "name": "Homunculus Bile",
+        "id": 13
+      },
+      {
+        "name": "Cursed Bones",
+        "id": 14
+      },
+      {
+        "name": "Runed Bones",
+        "id": 15
+      },
+      {
+        "name": "Decaying Homunculus",
+        "id": 16
+      },
+      {
+        "name": "Damned Souls",
+        "id": 17
+      },
+      {
+        "name": "Homunculus Blood",
+        "id": 18
+      },
+      {
+        "name": "Putrid Souls",
+        "id": 19
+      },
+      {
+        "name": "Runic Scroll",
+        "id": 20
+      },
+      {
+        "name": "Arcane Quill",
+        "id": 21
+      },
+      {
+        "name": "Third Eye",
+        "id": 22
+      },
+      {
+        "name": "Scrivening Quill",
+        "id": 23
+      },
+      {
+        "name": "Ancient Scroll",
+        "id": 24
+      },
+      {
+        "name": "Scrying Eye",
+        "id": 25
+      },
+      {
+        "name": "Warding Scroll",
+        "id": 26
+      },
+      {
+        "name": "Rune Quill",
+        "id": 27
+      },
+      {
+        "name": "Elder Eye",
+        "id": 28
+      },
+      {
+        "name": "Dream Catcher",
+        "id": 29
+      },
+      {
+        "name": "Sage Antler",
+        "id": 30
+      },
+      {
+        "name": "Living Seed",
+        "id": 31
+      },
+      {
+        "name": "Ochre Antler",
+        "id": 32
+      },
+      {
+        "name": "Spriggan Seed",
+        "id": 33
+      },
+      {
+        "name": "Blood Catcher",
+        "id": 34
+      },
+      {
+        "name": "Frostborn Seed",
+        "id": 35
+      },
+      {
+        "name": "Spirit Catcher",
+        "id": 36
+      },
+      {
+        "name": "Woad Antler",
+        "id": 37
+      },
+      {
+        "name": "Sunrise Emblem",
+        "id": 38
+      },
+      {
+        "name": "Heretical Script",
+        "id": 39
+      },
+      {
+        "name": "Mournful Pennant",
+        "id": 40
+      },
+      {
+        "name": "Inscribed Tablet",
+        "id": 41
+      },
+      {
+        "name": "Solarum Banner",
+        "id": 42
+      },
+      {
+        "name": "Solar Commandment",
+        "id": 43
+      },
+      {
+        "name": "Argent Crest",
+        "id": 44
+      },
+      {
+        "name": "Dread Banner",
+        "id": 45
+      },
+      {
+        "name": "Tainted Effigy",
+        "id": 46
+      },
+      {
+        "name": "Ivory Dice",
+        "id": 47
+      },
+      {
+        "name": "Venom Phial",
+        "id": 48
+      },
+      {
+        "name": "Weathered Coins",
+        "id": 49
+      },
+      {
+        "name": "Stolen Tithe",
+        "id": 50
+      },
+      {
+        "name": "Oil Vial",
+        "id": 51
+      },
+      {
+        "name": "Jade Dice",
+        "id": 52
+      },
+      {
+        "name": "Ruby Dice",
+        "id": 53
+      },
+      {
+        "name": "Antidote Vial",
+        "id": 54
+      },
+      {
+        "name": "Ancient Coins",
+        "id": 55
+      },
+      {
+        "name": "Lost Anchor",
+        "id": 56
+      },
+      {
+        "name": "Stone Tablet",
+        "id": 57
+      },
+      {
+        "name": "Dragon Heart",
+        "id": 58
+      },
+      {
+        "name": "Blood Encased Hive",
+        "id": 59
+      },
+      {
+        "name": "Runed Box",
+        "id": 60
+      }
+    ],
+    "enum": "RELIC"
+  },
+  {
+    "id": 23,
+    "name": "Bow",
+    "subTypes": [
+      {
+        "name": "Shortbow",
+        "id": 0
+      },
+      {
+        "name": "Birch Bow",
+        "id": 1
+      },
+      {
+        "name": "Salvaged Bow",
+        "id": 2
+      },
+      {
+        "name": "Imperial Bow",
+        "id": 3
+      },
+      {
+        "name": "Recurve Bow",
+        "id": 4
+      },
+      {
+        "name": "Northern Bow",
+        "id": 5
+      },
+      {
+        "name": "Longbow",
+        "id": 6
+      },
+      {
+        "name": "Dreadthorn Bow",
+        "id": 7
+      },
+      {
+        "name": "Serpent Bow",
+        "id": 8
+      },
+      {
+        "name": "Osprix Bow",
+        "id": 9
+      },
+      {
+        "name": "Obsidian Bow",
+        "id": 10
+      },
+      {
+        "name": "Storm Bow",
+        "id": 11
+      },
+      {
+        "name": "Circle of Fortune Bow",
+        "id": 12
+      },
+      {
+        "name": "Merchants Guild Bow",
+        "id": 13
+      }
+    ],
+    "enum": "BOW"
+  },
+  {
+    "id": 25,
+    "name": "Small Idol",
+    "subTypes": [
+      {
+        "name": "Small Eterran Idol",
+        "id": 0
+      }
+    ],
+    "enum": "IDOL_1x1_ETERRA"
+  },
+  {
+    "id": 26,
+    "name": "Small Lagonian Idol",
+    "subTypes": [
+      {
+        "name": "Small Lagonian Idol",
+        "id": 0
+      }
+    ],
+    "enum": "IDOL_1x1_LAGON"
+  },
+  {
+    "id": 27,
+    "name": "Humble Idol",
+    "subTypes": [
+      {
+        "name": "Humble Eterran Idol",
+        "id": 0
+      }
+    ],
+    "enum": "IDOL_2x1"
+  },
+  {
+    "id": 28,
+    "name": "Stout Idol",
+    "subTypes": [
+      {
+        "name": "Stout Lagonian Idol",
+        "id": 0
+      }
+    ],
+    "enum": "IDOL_1x2"
+  },
+  {
+    "id": 29,
+    "name": "Grand Idol",
+    "subTypes": [
+      {
+        "name": "Grand Heorot Idol",
+        "id": 0
+      },
+      {
+        "name": "Grand Glass Idol",
+        "id": 1
+      },
+      {
+        "name": "Grand Solar Idol",
+        "id": 2
+      },
+      {
+        "name": "Grand Bone Idol",
+        "id": 3
+      },
+      {
+        "name": "Grand Majasan Idol",
+        "id": 4
+      }
+    ],
+    "enum": "IDOL_3x1"
+  },
+  {
+    "id": 30,
+    "name": "Large Idol",
+    "subTypes": [
+      {
+        "name": "Large Nomad Idol",
+        "id": 0
+      },
+      {
+        "name": "Large Arcane Idol",
+        "id": 1
+      },
+      {
+        "name": "Large Rahyeh Idol",
+        "id": 2
+      },
+      {
+        "name": "Large Immortal Idol",
+        "id": 3
+      },
+      {
+        "name": "Large Shadow Idol",
+        "id": 4
+      }
+    ],
+    "enum": "IDOL_1x3"
+  },
+  {
+    "id": 31,
+    "name": "Ornate Idol",
+    "subTypes": [
+      {
+        "name": "Ornate Heorot Idol",
+        "id": 0
+      },
+      {
+        "name": "Ornate Glass Idol",
+        "id": 1
+      },
+      {
+        "name": "Ornate Solar Idol",
+        "id": 2
+      },
+      {
+        "name": "Ornate Bone Idol",
+        "id": 3
+      },
+      {
+        "name": "Ornate Majasan Idol",
+        "id": 4
+      }
+    ],
+    "enum": "IDOL_4x1"
+  },
+  {
+    "id": 32,
+    "name": "Huge Idol",
+    "subTypes": [
+      {
+        "name": "Huge Nomad Idol",
+        "id": 0
+      },
+      {
+        "name": "Huge Arcane Idol",
+        "id": 1
+      },
+      {
+        "name": "Huge Rahyeh Idol",
+        "id": 2
+      },
+      {
+        "name": "Huge Immortal Idol",
+        "id": 3
+      },
+      {
+        "name": "Huge Shadow Idol",
+        "id": 4
+      }
+    ],
+    "enum": "IDOL_1x4"
+  },
+  {
+    "id": 33,
+    "name": "Adorned Idol",
+    "subTypes": [
+      {
+        "name": "Adorned Heorot Idol",
+        "id": 0
+      },
+      {
+        "name": "Adorned Arcane Idol",
+        "id": 1
+      },
+      {
+        "name": "Adorned Rahyeh Idol",
+        "id": 2
+      },
+      {
+        "name": "Adorned Immortal Idol",
+        "id": 3
+      },
+      {
+        "name": "Adorned Majasan Idol",
+        "id": 4
+      },
+      {
+        "name": "Adorned Silver Idol",
+        "id": 5
+      },
+      {
+        "name": "Adorned Volcano Idol",
+        "id": 6
+      }
+    ],
+    "enum": "IDOL_2x2"
+  }
+]

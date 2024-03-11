@@ -1,0 +1,37 @@
+# Dependency directories
+node_modules/
+
+# TypeScript source files
+src/
+
+# Compiled JavaScript map files
+*.map
+
+# Testing files
+test/
+tests/
+__tests__/
+test.ts
+
+# TypeScript v1 declaration files
+typings/
+
+# Configuration files
+tsconfig.json
+.jshintrc
+.eslintignore
+.eslintrc
+.tslint.json
+.prettierrc
+.prettierignore
+
+# Development tools
+.travis.yml
+.gitignore
+.npmignore
+.editorconfig
+.nyc_output
+coverage/
+
+# Documentation
+*.md

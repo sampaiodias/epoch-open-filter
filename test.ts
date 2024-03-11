@@ -1,8 +1,12 @@
-import {fromXml, toXml} from "./src";
+import {affixData, fromXml, itemTypeData, toXml} from "./src";
 import {ItemFilter} from "./src/item-filter";
 import * as assert from "assert";
 import {ItemFilterIcon} from "./src/item-filter-icon";
 import {ItemFilterIconColor} from "./src/item-filter-icon-color";
+import {ItemTypeData} from "./src/item-type-data";
+import {ItemType} from "./src/item-type";
+import {ItemSubTypeData} from "./src/item-sub-type-data";
+import {Affix} from "./src/affix";
 
 const initialXml: string = `<?xml version="1.0" encoding="utf-8"?>
 <ItemFilter xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
@@ -94,12 +98,30 @@ const initialXml: string = `<?xml version="1.0" encoding="utf-8"?>
   </rules>
 </ItemFilter>`;
 
+// Check if the import feature is working
 const itemFilter: ItemFilter = fromXml(initialXml);
 assert.equal(itemFilter.filterIconEnum, ItemFilterIcon.Boots);
 assert.equal(itemFilter.filterIconColorEnum, ItemFilterIconColor.Green);
 
+// Check if the export feature is working
 const filterToXml = toXml(itemFilter);
 const formattedXml = filterToXml.replace(/<(\w+)([^>]*)\/>/g, '<$1$2 />'); // Add a space to self-closed tags
 assert.deepEqual(formattedXml, initialXml, 'The original XML is not the same as the generated XML');
+
+// Check if we have the item data
+itemTypeData().then((data: ItemTypeData[]) => {
+    assert.deepEqual(data.length, 32);
+    assert.deepEqual(data[0].enum, ItemType.Helmet);
+    const furHelmet: ItemSubTypeData | undefined = data[0].subTypes.find(subType => subType.id == 7);
+    assert.ok(furHelmet);
+    assert.deepEqual(furHelmet.name, 'Fur Helmet');
+});
+
+// Check if we have the affix data
+affixData().then((data: Affix[]) => {
+    assert.deepEqual(data.length, 759);
+    assert.deepEqual(data[0].name, 'Added Armor');
+    assert.deepEqual(data[0].id, 31);
+})
 
 console.log('All tests passed!')

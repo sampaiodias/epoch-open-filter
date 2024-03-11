@@ -7,6 +7,9 @@ import {RarityCondition} from "./rarity-condition";
 import {SubTypeCondition} from "./sub-type-condition";
 import {ItemFilterIcon} from "./item-filter-icon";
 import {ItemFilterIconColor} from "./item-filter-icon-color";
+import {readFile} from "fs/promises";
+import {ItemTypeData} from "./item-type-data";
+import {Affix} from "./affix";
 
 export type XmlElement = {
     type: string;
@@ -118,6 +121,16 @@ export function toXml(itemFilter: ItemFilter): string {
 
     const options = { compact: true, ignoreComment: true, spaces: 2 };
     return js2xml(itemFilterObj, options);
+}
+
+export async function itemTypeData(): Promise<ItemTypeData[]> {
+    let json = await readFile('src/data/item-types.json', {encoding: 'utf-8'});
+    return JSON.parse(json);
+}
+
+export async function affixData(): Promise<Affix[]> {
+    let json = await readFile('src/data/affixes.json', {encoding: 'utf-8'});
+    return JSON.parse(json);
 }
 
 function mapRules(rulesElements: XmlElement[]): Rule[] {
