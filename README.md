@@ -26,3 +26,5 @@ yarn add epoch-open-filter
 
 ## License
 [MIT License](LICENSE.md)
+
+*This project is not affiliated with Eleventh Hour Games. Last Epoch is a registered trademark of Eleventh Hour Games in the U.S. and/or other countries.*
