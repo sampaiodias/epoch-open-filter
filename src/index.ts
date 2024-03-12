@@ -10,7 +10,9 @@ import {ItemFilterIconColor} from "./item-filter-icon-color";
 import {readFile} from "fs/promises";
 import {ItemTypeData} from "./item-type-data";
 import {Affix} from "./affix";
-import {LevelCondition, LevelConditionType} from "./level-condition";
+import {LevelCondition} from "./level-condition";
+import {AffixCondition} from "./affix-condition";
+import {LevelConditionType} from "./level-condition-type";
 
 export type XmlElement = {
     type: string;
@@ -108,6 +110,16 @@ export function toXml(itemFilter: ItemFilter): string {
                                 const lc = (condition as LevelCondition);
                                 conditionObj.treshold = {_text: lc.threshold}; // Yes, the filter from EHG has a typo
                                 conditionObj.type = {_text: lc.levelConditionType};
+                            } else if (condition.type === 'AffixCondition') {
+                                const ac = (condition as AffixCondition);
+                                const affixes = ac.affixes.map(affix => ({ int: affix }));
+                                conditionObj.affixes = { int: affixes.map(affix => affix.int) };
+                                conditionObj.comparsion = {_text: ac.comparison};
+                                conditionObj.comparsionValue = {_text: ac.comparisonValue};
+                                conditionObj.minOnTheSameItem = {_text: ac.minOnTheSameItem};
+                                conditionObj.combinedComparsion = {_text: ac.combinedComparison};
+                                conditionObj.combinedComparsionValue = {_text: ac.combinedComparisonValue};
+                                conditionObj.advanced = {_text: ac.advanced};
                             }
                             return conditionObj;
                         })
@@ -217,6 +229,28 @@ function mapConditions(conditionsElements: XmlElement[]): Condition[] {
                 const levelCondition: LevelCondition = new LevelCondition(parseInt(threshold, 10), levelConditionType);
                 conditions.push(levelCondition);
             }
+        } else if (condition.type === "AffixCondition") {
+            const affixes = condElement.elements.find(x => x.name == 'affixes')?.elements.map(e => {
+                return parseInt(e.elements[0].text);
+            });
+            const minOnTheSameItem = condElement.elements.find(x => x.name == 'minOnTheSameItem')?.elements[0]?.text;
+            const advanced = condElement.elements.find(x => x.name == 'advanced')?.elements[0]?.text;
+            // Yes, the filter from EHG has typos
+            const comparison = condElement.elements.find(x => x.name == 'comparsion')?.elements[0]?.text;
+            const comparisonValue = condElement.elements.find(x => x.name == 'comparsionValue')?.elements[0]?.text;
+            const combinedComparison = condElement.elements.find(x => x.name == 'combinedComparsion')?.elements[0]?.text;
+            const combinedComparisonValue = condElement.elements.find(x => x.name == 'combinedComparsionValue')?.elements[0]?.text;
+
+            const affixCondition: AffixCondition = new AffixCondition(
+                affixes ? affixes : [],
+                advanced == 'true',
+                comparison ? comparison : '',
+                comparisonValue ? parseInt(comparisonValue) : 0,
+                minOnTheSameItem ? parseInt(minOnTheSameItem) : 0,
+                combinedComparison ? combinedComparison : '',
+                combinedComparisonValue ? parseInt(combinedComparisonValue) : 0
+            );
+            conditions.push(affixCondition);
         }
     });
     return conditions;
