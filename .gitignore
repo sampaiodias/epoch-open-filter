@@ -16,3 +16,5 @@ Thumbs.db
 
 # Env Files
 .env
+
+src/_data/

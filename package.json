@@ -1,15 +1,28 @@
 {
   "name": "epoch-open-filter",
   "version": "0.1.0",
-  "description": "",
+  "description": "A Typescript library made for developers that want to build their own loot filter apps for Last Epoch.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ts-node test.ts"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["last epoch", "loot filter", "arpg"],
+  "author": "Lucas Sampaio Dias",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^5.4.2"
-  }
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "assert": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sampaiodias/epoch-open-filter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sampaiodias/epoch-open-filter/issues"
+  },
+  "homepage": "https://github.com/sampaiodias/epoch-open-filter#readme"
 }
