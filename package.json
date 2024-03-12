@@ -1,6 +1,6 @@
 {
   "name": "epoch-open-filter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Typescript library made for developers that want to build their own loot filter apps for Last Epoch.",
   "main": "index.js",
   "scripts": {

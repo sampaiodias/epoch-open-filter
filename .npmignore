@@ -24,6 +24,7 @@ tsconfig.json
 .tslint.json
 .prettierrc
 .prettierignore
+.idea
 
 # Development tools
 .travis.yml
