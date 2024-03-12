@@ -12,7 +12,6 @@ import {ItemTypeData} from "./item-type-data";
 import {Affix} from "./affix";
 import {LevelCondition} from "./level-condition";
 import {AffixCondition} from "./affix-condition";
-import {LevelConditionType} from "./level-condition-type";
 
 export type XmlElement = {
     type: string;
@@ -22,6 +21,10 @@ export type XmlElement = {
     attributes: { [key: string]: string };
 };
 
+/**
+ * Convert a loot filter in XML format into a ItemFilter object.
+ * @param xml a string containing the XML
+ */
 export function fromXml(xml: string): ItemFilter {
     let itemFilter: ItemFilter = {
         description: "",
@@ -69,6 +72,10 @@ export function fromXml(xml: string): ItemFilter {
     return itemFilter;
 }
 
+/**
+ * Converts an ItemFilter object into its XML representation.
+ * @param itemFilter The filter's data
+ */
 export function toXml(itemFilter: ItemFilter): string {
     const itemFilterObj = {
         _declaration: {
@@ -140,11 +147,17 @@ export function toXml(itemFilter: ItemFilter): string {
     return js2xml(itemFilterObj, options);
 }
 
+/**
+ * Loads all item data from a JSON file and returns it as a Promise.
+ */
 export async function itemTypeData(): Promise<ItemTypeData[]> {
     let json = await readFile('src/data/item-types.json', {encoding: 'utf-8'});
     return JSON.parse(json);
 }
 
+/**
+ * Loads all affix data from a JSON file and returns it as a Promise.
+ */
 export async function affixData(): Promise<Affix[]> {
     let json = await readFile('src/data/affixes.json', {encoding: 'utf-8'});
     return JSON.parse(json);
